@@ -5,4 +5,5 @@
 - [] Hacer un contact form hasta abajo responsivo de bootstrap o lo que sea y usar [Formspree.io] (https://formspree.io/)
 - [] mover algunos detalles como el circulo alrededor del logo
 - []el color del fondo si no les gusta digan poke ami si me guto :v
-- []pongan una lisensia shabos atte elliot
+- [X]pongan una lisensia shabos atte elliot
+#Licencia shila no mi lo roben 
