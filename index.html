@@ -10,6 +10,23 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/normalize.min.css">
+		<link rel="stylesheet" href="assets/css/animate.min.css">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<link rel="stylesheet" href="assets/css/normalize.min.css">
+		<link rel="stylesheet" href="assets/css/animate.min.css">
+		<style>
+				#btn-close-modal {
+						width:100%;
+						text-align: left;
+						cursor:pointer;
+						color:#fff;
+				}
+
+		</style>
+		</head>
 
 	</head>
 	<body>
@@ -66,6 +83,25 @@
 										<span class="icon major style1 fa fa-trash-o"></span>
 										<h3>Basurero General</h3>
 										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+										<li><a id="demo01" href="#animatedModal">DEMO01</a></li>
+										<div id="animatedModal">
+						            <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+						            <div  id="btn-close-modal" class="close-animatedModal">
+						                CLOSE MODAL
+						            </div>
+
+						            <div class="modal-content">
+						                <!--Your modal content goes here-->
+
+														<p>
+															<br>
+															<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d13945.443284104294!2d-110.94809301215429!3d29.09502716785721!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smx!4v1475640166448" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+														</p>
+
+
+
+						            </div>
+						        </div>
 
 									</li>
 
@@ -153,6 +189,36 @@
 			<script src="assets/js/util.js"></script>
 			<script src="https://use.fontawesome.com/12935c35d9.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/animatedModal.min.js"></script>
+			<script>
+
+					//demo 01
+					$("#demo01").animatedModal();
+
+					//demo 02
+					$("#demo02").animatedModal({
+							modalTarget:'modal-02',
+							animatedIn:'lightSpeedIn',
+							animatedOut:'bounceOutDown',
+							color:'#3498db',
+							// Callbacks
+							beforeOpen: function() {
+									console.log("The animation was called");
+							},
+							afterOpen: function() {
+									console.log("The animation is completed");
+							},
+							beforeClose: function() {
+									console.log("The animation was called");
+							},
+							afterClose: function() {
+									console.log("The animation is completed");
+							}
+					});
+
+			</script>
+
 
 	</body>
 </html>
