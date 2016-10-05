@@ -3250,7 +3250,7 @@
 	}
 
 		#nav input, #nav select, #nav textarea {
-			color: #636363;
+			color: #C4DFE6;
 		}
 
 		#nav a:hover {
@@ -3258,11 +3258,11 @@
 		}
 
 		#nav strong, #nav b {
-			color: #636363;
+			color: #C4DFE6;
 		}
 
 		#nav h1, #nav h2, #nav h3, #nav h4, #nav h5, #nav h6 {
-			color: #636363;
+			color: #C4DFE6;
 		}
 
 		#nav blockquote {
@@ -3271,11 +3271,11 @@
 
 		#nav code {
 			background: rgba(222, 222, 222, 0.25);
-			border-color: #dddddd;
+			border-color: #C4DFE6;
 		}
 
 		#nav hr {
-			border-bottom-color: #dddddd;
+			border-bottom-color: #C4DFE6;
 		}
 
 		#nav + #main {
@@ -3314,11 +3314,12 @@
 				}
 
 					#nav ul li a:hover {
-						background-color: rgba(222, 222, 222, 0.25);
+						background-color: #C4DFE6;
+						transition: 0.1s
 					}
 
 					#nav ul li a.active {
-						background-color: #ffffff;
+						background-color: #FFFFFF;
 						box-shadow: none;
 					}
 
