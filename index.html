@@ -73,10 +73,11 @@
 				</header>
 				<ul class="features">
 					<li>
-						<span class="icon major style1 fa fa-trash-o"></span>
+						<a id="demo01" href="#animatedModal">
+							<span class="icon major style1 fa fa-trash-o"></span>
+						</a>
 						<h3>Basurero General</h3>
 						<p>Información sobre lo que se desea reciclar</p>
-						<a id="demo01" href="#animatedModal">DEMO</a>
 						<div id="animatedModal">
 							<!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
 							<div id="btn-close-modal" class="close-animatedModal">
@@ -99,14 +100,19 @@
 					</li>
 
 					<li>
-						<span class="icon major style3 fa-copy"></span>
+						<a id="demo02" href="#animatedModal">
+							<span class="icon major style3 fa-copy"></span>
+						</a>
 						<h3>Reciclar Papel</h3>
 						<p>Información sobre lo que se desea reciclar</p>
+
 
 					</li>
 
 					<li>
-						<span class="icon major style5 fa-battery-full"></span>
+						<a id="demo03" href="#animatedModal">
+							<span class="icon major style5 fa-battery-full"></span>
+						</a>
 						<h3>Reciclar baterias</h3>
 						<p>Información sobre lo que se desea reciclar</p>
 
@@ -195,12 +201,28 @@
 				$("#nav").hide();
 			});
 
+			$('#demo02').click(function() {
+				$("#nav").hide();
+			});
+
+			$('#demo03').click(function() {
+				$("#nav").hide();
+			});
+
 			$('#btn-close-modal').click(function() {
 				$("#nav").show();
 			});
 
 		//demo 01
 		$("#demo01").animatedModal({
+			animatedIn: 'fadeInLeft',
+			animatedOut: 'bounceOutDown'
+		});
+		$("#demo02").animatedModal({
+			animatedIn: 'fadeInLeft',
+			animatedOut: 'bounceOutDown'
+		});
+		$("#demo03").animatedModal({
 			animatedIn: 'fadeInLeft',
 			animatedOut: 'bounceOutDown'
 		});
