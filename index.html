@@ -20,11 +20,10 @@
 
 </head>
 
-<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-    <!-- Navigation -->
+    <!-- Navigation eesto ya esta medio wapo-->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header page-scroll">
@@ -34,7 +33,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Reciclason<i class="fa fa-recycle" aria-hidden="true"></i></span></a>
+                <a class="navbar-brand page-scroll" href="#page-top">Reciclason <i class="fa fa-recycle" aria-hidden="true"></i></span></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -62,19 +61,12 @@
 
 
 
-    <!-- Intro Section -->
+    <!-- Intro Section, falta hacer esto mas wapo -->
     <section id="intro" class="intro-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <!--  <h1>Scrolling Nav</h1>
-                    <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>,
-                        and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the
-                        page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding
-                        ID on the page.</p>
-                    <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
-                    -->
-                    <header id="header" class="alt">
+                     <header id="header" class="alt">
                         <span class="logo"><i class="fa fa-recycle fa-5x" aria-hidden="true"></i></span>
                         <h1>Reciclason</h1>
                         <p>Un lugar para informarte de los lugares disponibles para reciclar<br />
@@ -85,7 +77,7 @@
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About Section falta hacerlo wapo tmb -->
     <section id="about" class="about-section">
 
         <div class="container">
@@ -114,19 +106,76 @@
         </div>
     </section>
 
+
+
     <!-- Services Section -->
+
     <section id="services" class="services-section">
+
+        <h1>¿Qué quieres reciclar?</h1>
+
         <div class="container">
+
+          <!-- aqui va a ir todo el desmadre que se pueda reciclar, lo ideal seria
+               que fueran links a alguna animacion que traiga el mapa, o si nos ponemos
+               fresones pues que traiga otra vista con node o quien sabe que wea  -->
+
+            
             <div class="row">
-                <div class="col-lg-12">
-                       <div id="map"></div>
+
+                <!-- no se por que verga el primero sale un poco mas arriba
+                     un millon de piedrolares al que lo arregle -->
+
+                <div class="col-md-4">
+                    <span class="icon major style1 fa fa-trash-o fa-5x"></span>
+                    <h3>Basurero General</h3>
+                    <p>Información sobre lo que se desea reciclar</p>
                 </div>
+
+                <div class="col-md-4">
+                    <span class="icon major style3 fa-copy fa-5x"></span>
+                    <h3>Reciclar Papel</h3>
+                    <p>Información sobre lo que se desea reciclar</p>
+                </div>
+
+                <div class="col-md-4">
+                    <span class="icon major style5 fa-battery-full fa-5x"></span>
+                    <h3>Reciclar baterias</h3>
+                    <p>Información sobre lo que se desea reciclar</p>
+                </div>
+                
             </div>
+
+            <div class="row">
+
+                <!-- hay que ponerle diferentes cosas a reciclar en este row -->
+                     
+                <div class="col-md-4">
+                    <span class="icon major style1 fa fa-trash-o fa-5x"></span>
+                    <h3>Basurero General</h3>
+                    <p>Información sobre lo que se desea reciclar</p>
+                </div>
+
+                <div class="col-md-4">
+                    <span class="icon major style3 fa-copy fa-5x"></span>
+                    <h3>Reciclar Papel</h3>
+                    <p>Información sobre lo que se desea reciclar</p>
+                </div>
+
+                <div class="col-md-4">
+                    <span class="icon major style5 fa-battery-full fa-5x"></span>
+                    <h3>Reciclar baterias</h3>
+                    <p>Información sobre lo que se desea reciclar</p>
+                </div>
+                
+            </div>
+
+
         </div>
 
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Section desmadre del formspree-->
     <section id="contact" class="contact-section">
         <h1>¡Contáctanos!</h1>
 
@@ -173,7 +222,18 @@
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
 
-    <!-- Google maps API -->
+    <!-- Google maps API 
+    
+    <div class="map"></map>            < asi se usa
+
+
+    Este desmadre es para usar el mapa, si no lo vamos a hacer con node
+    podemos meter unos jquerys bien sabrosos para que salga el mapa 
+    con una animacion y con los pins 
+    https://developers.google.com/maps/documentation/javascript/examples/
+    ^ ahi viene como hacerlo casi todo, seria buscar qp2 con jquery
+
+    -->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTYZQM4W29FxtaAUBAODN3eTwHwv2YYG0&callback=initMap">
     </script>
 
